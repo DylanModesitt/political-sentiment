@@ -16,6 +16,7 @@ this can also be used after initially setting up the environment to activate the
 
 The project is structured in the following fashion. 
 
+```
 .
 +-- _setup
 +-- _bin
@@ -40,4 +41,5 @@ The project is structured in the following fashion.
 +-- _models
 |   +-- contains python code that exports keras models
 
+```
 
