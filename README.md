@@ -29,10 +29,6 @@ The project is structured in the following fashion.
 |           debates from 2005 along with labels for 
 |           both for the political party of the speaker and 
 |           whether the statement is for/against the bill.
-|   +--_ibc
-|       +-- this is labeled data from the ideological books corpus that 
-|           has several thousand sentances with liberal, concervative, and 
-|           neutral labels
 |   +--_twitter
 |       +-- data we have collected from the public twitter api.
 +-- _preprocessing 
