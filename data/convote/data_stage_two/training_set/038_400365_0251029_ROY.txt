@@ -1,0 +1,24 @@
+mr. speaker , reclaiming my time , i will be happy to explain . 
+the mass action provision was included in the bill because mass actions are really class actions in disguise . 
+they involve an element of people who want their claims adjudicated together , and they often result in the same abuses as class actions . 
+in fact , sometimes the abuses are even worse because the lawyers seek to join claims that have little to do with each other and confuse a jury into awarding millions of dollars to individuals who have suffered no real injury . 
+here is how the mass action provision and the current amount-in-controversy provision would work in tandem : suppose 200 people file a mass action in mississippi against a new jersey drug manufacturer and also name a local drug store . 
+three of them assert claims for a million dollars apiece , and the rest assert claims of $ 20 , 000 . 
+the federal court would have jurisdiction over the mass action because there are more than 100 plaintiffs , there is minimal diversity , and the total amount of controversy exceeds $ 5 million , and a product liability case does not qualify for the local occurrence exception in the provision . 
+then the question becomes , which claims would , in the mass action , the federal judge keep in federal court , and which would be remanded ? 
+at this point the judge would have to look at each of the claims very carefully and determine whether or not they meet the $ 75 , 000 minimum . 
+in this regard , i would note that the plaintiffs often seek to minimize what they are seeking in the complaint so that they can stay in state court . 
+for example , sometimes plaintiffs leave their claim for punitive damages off the original complaint to make it seem like their claims are smaller than they really are . 
+it is our expectation that a federal judge would read a complaint very carefully and only remand claims that clearly do not meet the $ 75 , 000 threshold . 
+if it is likely that a plaintiff is going to turn around in a month and add an additional claim for punitive damages , the federal court should obviously assert jurisdiction over that individual 's claims . 
+finally , i would like to stress that this provision in no way is intended to abrogate 8 united states code 3867 to narrow current jurisdictional rules . 
+thus , if a federal court believed it to be appropriate , the court could apply supplemental jurisdiction in the mass action context as well . 
+with regard to the exceptions , it is our intent that they be interpreted strictly by a court so that they do not become loopholes for an important jurisdictional provision . 
+thus , the first exception would apply only in a situation where we are talking about a truly local single event with no substantial interstate effects . 
+the purpose of this exception is to allow cases involving environmental torts , such as a chemical spill , to remain in state court if both the event and the injuries were truly local , even though there are some out-of-state defendants . 
+by contrast , this exception would not apply to a product liability or insurance case . 
+the sale of a product to different people does not qualify as an event , and the alleged injuries in such a case would be spread out over more than one state or contiguous states even if all of the plaintiffs in a particular case came from one single state . 
+the third exception addresses a very narrow situation , specifically a law like the california unfair competition law , which allows individuals to bring a suit on behalf of the general public . 
+such a suit would not qualify as a mass action . 
+however , the vast majority of cases brought under other states ' consumer fraud laws which do not have a parallel provision could qualify as removable class actions . 
+i yield to the gentleman from virginia . 
