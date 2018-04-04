@@ -5,9 +5,9 @@ from typing import Sequence, Mapping
 # lib 
 import numpy as np 
 from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequences import pad_sequences
 
-
-@dataclasse
+@dataclass
 class Data:
 
     x_train: Sequence
@@ -47,6 +47,8 @@ def get_data(samples,
     index_to_word = {v:k for k,v in word_to_index.items()}
 
     x = t.texts_to_sequences(samples)
+    x = pad_sequences(x, padding='pre')
+
     x = np.array(x)
     y = np.array(labels)
 
