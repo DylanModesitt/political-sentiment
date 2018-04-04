@@ -51,28 +51,30 @@ class Model:
         
         embedding = Embedding(
              output_dim=self.embedding_size, 
-             input_dim=vocabulary_size,
+             input_dim=self.vocabulary_size,
              input_length=self.input_length,
              name='embedding'
         )(input_layer)
 
         encoder = LSTM(
             self.latent_dim,
-            dropout=dropout,
-            recurrent_dropout=dropout,
+            dropout=self.dropout,
+            recurrent_dropout=self.dropout,
             name='encoder'
         )(embedding)
 
         dense = Dense(
             4*self.latent_dim,
-            activation='tanh'
+            activation='tanh',
+            name='transform'
         )(encoder)
 
 
         prediction = Dense(
             1,
-            activation='sigmoid'
-        )
+            activation='sigmoid',
+            name='prediction'
+        )(dense)
 
         model = Model(inputs=input_layer, ouputs=prediction)
         return model 
