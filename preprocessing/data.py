@@ -1,9 +1,9 @@
-# system 
-from dataclasses import dataclass, field 
+# system
+from dataclasses import dataclass, field
 from typing import Sequence, Mapping
 
-# lib 
-import numpy as np 
+# lib
+import numpy as np
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequences import pad_sequences
 
@@ -14,29 +14,29 @@ class Data:
     y_train: Sequence
     x_test: Sequence
     y_test: Sequence
-    
+
     word_to_index: Mapping
-    index_to_word: Mapping    
+    index_to_word: Mapping
 
 def get_data(samples,
-             labels, 
+             labels,
              vocab_size=8000,
              oov_token='oov',
              shuffle=False,
              validation_split=0.2,
              verbose=1)
     """
-    get properly formatted data and 
-    data tools for a given set of 
+    get properly formatted data and
+    data tools for a given set of
     samples and labels.
 
     :param samples: a list of sentences (or
                     sentence fragements)
-    :param labels: a list of the labels of those 
+    :param labels: a list of the labels of those
                    sentences (or fragements)
     :param verbose: logging level of data creation
 
-    :return: an intantiation of the above dataclass 
+    :return: an intantiation of the above dataclass
     """
     assert len(samples) == len(lables)
 
@@ -64,15 +64,21 @@ def get_data(samples,
     y_train = y[split_idx:]
     y_test = y[split_idx:]
 
-    data = Data(x_train, y_train, x_test, y_test, word_to_index, index_to_word)
+    data = Data(
+        x_train,
+        y_train,
+        x_test,
+        y_test,
+        word_to_index,
+        index_to_word
+    )
+    return data
 
-    return data 
 
 
-    
 
-    
-    
+
+
 
 
 
