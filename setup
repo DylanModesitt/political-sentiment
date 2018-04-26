@@ -14,5 +14,5 @@ fi
 
 echo "activating virtual environment";
 source venv/bin/activate;
-
+export PYTHONPATH=$(pwd);
 
