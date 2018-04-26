@@ -33,9 +33,11 @@ class Data:
 def process_data(samples,
              labels,
              vocab_size=8000,
+             max_len=50,
              oov_token='oov',
              shuffle=True,
              validation_split=0.2,
+             one_hot_labels=False,
              verbose=1):
     """
     get properly formatted data and
@@ -70,21 +72,27 @@ def process_data(samples,
     whitelist = set('abcdefghijklmnopqrstuvwxyz!?., ')
     samples = [''.join([c for c in s if c in whitelist]) for s in samples]
 
+    # add bos and eos tokens
+    samples = ['bos ' + s + ' eos' for s in samples]
+
     # make all sentence-ending punctuation have a space before it to properly tokenize
     samples = [re.sub('(?<! )(?=[.,!?()])|(?<=[.,!?()])(?! )', r' ', s) for s in samples]
 
     ##########################
-    ## Tokenization
+    # Tokenization
     #########################
 
-    t = Tokenizer(num_words=vocab_size, oov_token=oov_token)
+    t = Tokenizer(num_words=vocab_size,
+                  oov_token=oov_token,
+                  filters='"#$%&()*+-/:;<=>?@[\\]^_`{|}~\t\n')
+
     t.fit_on_texts(samples)
 
     word_to_index = t.word_index
     index_to_word = {v: k for k, v in word_to_index.items()}
 
     x = t.texts_to_sequences(samples)
-    x = pad_sequences(x, padding='pre')
+    x = pad_sequences(x, padding='pre', maxlen=max_len)
 
     x = np.array(x)
     y = np.array(labels)
@@ -115,7 +123,7 @@ def process_data(samples,
 
 if __name__ == '__main__':
     X, Y = get_ibc_data()
-    process_data(X,Y)
+    process_data(X, Y)
 
 
 

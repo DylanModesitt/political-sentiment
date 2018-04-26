@@ -11,8 +11,10 @@ from keras.layers import (
     Embedding,
     LSTM,
     Dense,
-    Bidirectional
+    Bidirectional,
+    Dropout
 )
+from keras.regularizers import l1_l2
 
 # self
 from models.model import PoliticalSentimentModel
@@ -31,13 +33,13 @@ class LSTMSentimentModel(PoliticalSentimentModel):
     provide one to the initializer.
     """
 
-    input_length: int = 81
+    input_length: int = 50
     vocabulary_size: int = 8000
-    embedding_size: int = 10
+    embedding_size: int = 100
 
     latent_dim: int = 128
     use_bidirection: bool = True 
-    dropout: int = 0.3
+    dropout: int = 0.5
 
     def initialize_model(self):
         """
@@ -63,7 +65,8 @@ class LSTMSentimentModel(PoliticalSentimentModel):
             self.latent_dim,
             dropout=self.dropout,
             recurrent_dropout=self.dropout,
-            name='encoder'
+            name='encoder',
+            recurrent_regularizer=l1_l2(0, 0.005)
         )
 
         if self.use_bidirection:
@@ -80,15 +83,20 @@ class LSTMSentimentModel(PoliticalSentimentModel):
             name='transform'
         )(encoder)
 
+        dropout = Dropout(self.dropout)(
+            dense
+        )
+
         prediction = Dense(
             3,
             activation='softmax',
             name='prediction'
-        )(dense)
+        )(dropout)
 
         model = Model(inputs=input_layer, outputs=prediction)
         self.model = model
 
+        # sparse_categorical_crossentropy
         model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['acc'])
 
         if self.verbose > 0:
@@ -114,6 +122,10 @@ class LSTMSentimentModel(PoliticalSentimentModel):
             verbose=1
         ).history
 
+        self.history = {
+            'lstm': history
+        }
+
         return history 
 
 
@@ -127,7 +139,9 @@ if __name__ == '__main__':
     data = process_data(
         X,
         Y,
-        validation_split=0.1
+        validation_split=0.1,
+        max_len=model.input_length
     )
 
-    model(data)
+    model(data, epochs=10)
+    model.visualize()
