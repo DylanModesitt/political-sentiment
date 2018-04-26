@@ -35,9 +35,9 @@ class LSTMSentimentModel(PoliticalSentimentModel):
     vocabulary_size: int = 8000
     embedding_size: int = 10
 
-    latent_dim: int = 256
+    latent_dim: int = 128
     use_bidirection: bool = True 
-    dropout: int = 0.2
+    dropout: int = 0.3
 
     def initialize_model(self):
         """

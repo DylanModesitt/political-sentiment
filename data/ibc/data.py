@@ -46,7 +46,7 @@ def get_ibc_data(use_neutral=False,
     :return: X, Y, P?
     """
 
-    lib, con, neutral = pickle.load(open('./data/ibc/data.pkl', 'rb'))
+    lib, con, neutral = pickle.load(open('./data/ibc/ibcData.pkl', 'rb'))
 
     if not use_neutral:
         neutral = []
@@ -94,8 +94,5 @@ def get_ibc_data(use_neutral=False,
 
 
 if __name__ == '__main__':
-
-    # obj = pickle.load(open('./data/ibc/ibcData.pkl', 'rb'))
-    # dill.dump(obj, open('./data/ibc/data.pkl', 'wb'))
 
     X,Y,P = get_ibc_data(use_neutral=True, use_subsampling=True, return_subsampling_depths=True)
