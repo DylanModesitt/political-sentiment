@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Vue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/the.css"/>
+</head>
+<body>
+
+<!-- Begin page content -->
+<div class="container">
+    <div class="mt-1">
+        <h1>Political Sentiment Detection</h1>
+    </div>
+    <p class="lead">Deep Learning model to detect the political sentiment of written text. This research
+        was done as the final project to MIT's
+        <a href="http://web.mit.edu/insong/www/pdf/syl-poldata.pdf">17.835</a>.
+        You can find the code, as well as an technical explanation of the project
+        <a href="https://github.com/DylanModesitt/political-sentiment">here</a>.</p>
+
+    <div class="form col-md-8 offset-md-2">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">text:</span>
+            </div>
+            <input id="text" type="text" class="form-control" placeholder="the affordiable care act ..."
+                   aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button" onclick="analyzeSentiment()">Analyze</button>
+            </span>
+        </div>
+    </div>
+
+    <div id="results">
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Made at <a href="web.mit.edu">MIT</a>.</span>
+        <span class="text-muted footer-right"><a href="http://dylanmodesitt.com">Dylan Modesitt</a>,
+                                                Tim Henry, Danielle London, and Adam Theriault-Shay</span>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+<script>
+
+var rootUrl = 'http://localhost:8080';
+
+function analyzeSentiment() {
+    $.ajax({
+       type: 'post',
+       url: rootUrl + '/predict',
+       data: {
+           text: document.getElementById('text').value
+       },
+       success: function(response) {
+
+           var toShow = '';
+
+           for(var i=0 ; i < response.class_names.length ; i++) {
+               toShow += response.class_names[i].toString() + ": " +
+                         parseFloat(response.label[i]).toFixed(2).toString() +
+                         ", "
+            }
+
+           document.getElementById("results").innerHTML = toShow;
+       }
+    });
+}
+
+</script>
+</body>
+</html>

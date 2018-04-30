@@ -2,7 +2,7 @@
 import os
 import time
 import sys
-import string
+import pickle
 from abc import ABC, abstractmethod
 
 # lib
@@ -103,6 +103,14 @@ class PoliticalSentimentModel(ABC):
         for i, agent in enumerate(self.agents):
             agent.save_weights(self._get_save_path(i))
 
+        if hasattr(self, 'word_to_index'):
+            meta_dir = os.path.join(self.dir, 'meta/')
+            if not os.path.exists(meta_dir):
+                os.makedirs(meta_dir)
+
+            with open(os.path.join(meta_dir, 'word_to_index.pkl'), 'wb') as f:
+                pickle.dump(self.word_to_index, f)
+
     def load(self):
         """
         load the state of thhe model from a saved state.
@@ -110,6 +118,11 @@ class PoliticalSentimentModel(ABC):
         """
         for i, agent in enumerate(self.agents):
             agent.load_weights(self._get_save_path(i))
+
+        meta_dir = os.path.join(self.dir, 'meta/')
+        if os.path.exists(os.path.join(meta_dir, 'word_to_index.pkl')):
+            with open(os.path.join(meta_dir, 'word_to_index.pkl'), 'rb') as f:
+                self.word_to_index = pickle.load(f)
 
     def print(self, *args):
         """
@@ -151,8 +164,9 @@ class PoliticalSentimentModel(ABC):
         if not os.path.exists(visualization_dir):
             os.makedirs(visualization_dir)
 
-        unspecified = set(self.history.keys()) - set().union(metrics_to_mix)
+        unspecified = set(self.history.keys()) - set().union([e for i in metrics_to_mix for e in i])
         metrics = list(metrics_to_mix) + [[e] for e in unspecified]
+        print(metrics)
 
         for metric_set in metrics:
             if len(metric_set) == 0:
@@ -168,13 +182,12 @@ class PoliticalSentimentModel(ABC):
                 metric_set_name = metric_set[0]
                 metric_set_name.replace('val_', '')
 
-                plt.title('model ' + metric_set_name)
-                plt.ylabel(metric_set_name)
-                plt.xlabel('epoch')
-                plt.legend(legend, loc='upper right')
-
-                plt.savefig(os.path.join(visualization_dir, ','.join(metric_set) + '.png'))
-                plt.clf()
+            plt.title('model ' + metric_set_name)
+            plt.ylabel(metric_set_name)
+            plt.xlabel('epoch')
+            plt.legend(legend, loc='upper right')
+            plt.savefig(os.path.join(visualization_dir, ','.join(metric_set) + '.png'))
+            plt.clf()
 
     @staticmethod
     def generate_cohesive_history(histories):

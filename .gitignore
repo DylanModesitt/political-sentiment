@@ -96,3 +96,7 @@ venv.bak/
 # GloVe
 
 GloVe
+
+# credentials
+
+credentials.txt

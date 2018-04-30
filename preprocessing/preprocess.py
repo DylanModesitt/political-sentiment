@@ -6,10 +6,10 @@ from typing import Sequence, Mapping
 
 # lib
 import numpy as np
-from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 
 # self
+from general.tokenizer import Tokenizer
 import data.ibc.treeUtil as treeUtil
 sys.modules['treeUtil'] = treeUtil
 from data.ibc.data import get_ibc_data
@@ -30,33 +30,13 @@ class Data:
     w_test: Sequence = None
 
 
-def process_data(samples,
-             labels,
-             vocab_size=8000,
-             max_len=50,
-             oov_token='oov',
-             shuffle=True,
-             validation_split=0.2,
-             one_hot_labels=False,
-             verbose=1):
+def clean_text_documents(samples):
     """
-    get properly formatted data and
-    data tools for a given set of
-    samples and labels.
+    clean a list of text documents resonably well
 
-    :param samples: a list of sentences (or
-                    sentence fragements)
-    :param labels: a list of the labels of those
-                   sentences (or fragements)
-    :param verbose: logging level of data creation
-
-    :return: an intantiation of the above dataclass
+    :param samples: a list of text documents
+    :return:
     """
-    assert len(samples) == len(labels)
-
-    ##########################
-    ## Text Cleaning
-    #########################
 
     # standardize case
     samples = [sample.lower() for sample in samples]
@@ -78,13 +58,51 @@ def process_data(samples,
     # make all sentence-ending punctuation have a space before it to properly tokenize
     samples = [re.sub('(?<! )(?=[.,!?()])|(?<=[.,!?()])(?! )', r' ', s) for s in samples]
 
+    return samples
+
+def process_data(samples,
+             labels,
+             vocab_size=10000,
+             max_len=50,
+             oov_token='oov',
+             shuffle=True,
+             validation_split=0.2,
+             one_hot_labels=False,
+             verbose=1):
+    """
+    get properly formatted data and
+    data tools for a given set of
+    samples and labels.
+
+    :param samples: a list of sentences (or
+                    sentence fragements)
+    :param labels: a list of the labels of those
+                   sentences (or fragements)
+    :param verbose: logging level of data creation
+
+    :return: an intantiation of the above dataclass
+    """
+    assert len(samples) == len(labels)
+
+    def vprint(*args):
+        if verbose > 0:
+            print(*args)
+
+
+    ##########################
+    ## Text Cleaning
+    #########################
+
+    vprint('>> processing text')
+    vprint('cleaning text')
+    samples = clean_text_documents(samples)
+
     ##########################
     # Tokenization
     #########################
 
     t = Tokenizer(num_words=vocab_size,
-                  oov_token=oov_token,
-                  filters='"#$%&()*+-/:;<=>?@[\\]^_`{|}~\t\n')
+                  oov_token=oov_token)
 
     t.fit_on_texts(samples)
 
@@ -93,6 +111,9 @@ def process_data(samples,
 
     x = t.texts_to_sequences(samples)
     x = pad_sequences(x, padding='pre', maxlen=max_len)
+
+    percent_unkown = "%0.2f" % (100*np.sum(x == word_to_index[oov_token]) / np.sum(x > 0),)
+    vprint(percent_unkown + '% of the words are out of vocabulary and replaced with "' + oov_token + '"')
 
     x = np.array(x)
     y = np.array(labels)

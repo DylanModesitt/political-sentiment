@@ -8,7 +8,7 @@ import dill
 def get_ibc_data(use_neutral=False,
                  use_subsampling=False,
                  return_subsampling_depths=False,
-                 labels=(0,1,2)):
+                 labels=(0, 1, 2)):
     """
     Samples the annotated IBC data. This dataset can be described
     more here. http://www.cs.umd.edu/~miyyer/ibc/.
@@ -47,6 +47,8 @@ def get_ibc_data(use_neutral=False,
     """
 
     lib, con, neutral = pickle.load(open('./data/ibc/ibcData.pkl', 'rb'))
+    print(len(lib))
+    print(len(con))
 
     if not use_neutral:
         neutral = []
@@ -83,16 +85,19 @@ def get_ibc_data(use_neutral=False,
             for node in tree:
                 if hasattr(node, 'label'):
                     depth += 1
-                    X.append(node.get_words())
-                    Y.append(label_map[node.label.lower()])
-                    P.append(depth)
+                    if use_neutral or node.label.lower() != 'neutral':
+                        X.append(node.get_words())
+                        Y.append(label_map[node.label.lower()])
+                        P.append(depth)
 
         if return_subsampling_depths:
             return X, Y, P
 
-        return X, Y, P
+        return X, Y
 
 
 if __name__ == '__main__':
 
-    X,Y,P = get_ibc_data(use_neutral=True, use_subsampling=True, return_subsampling_depths=True)
+    X, Y, P = get_ibc_data(use_neutral=True,
+                           use_subsampling=True,
+                           return_subsampling_depths=True)

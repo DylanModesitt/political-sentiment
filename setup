@@ -27,3 +27,5 @@ echo "activating virtual environment";
 source venv/bin/activate;
 export PYTHONPATH=$(pwd);
 
+export FLASK_APP="./web/api.py";
+export FLASK_DEBUG=1
