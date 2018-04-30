@@ -38,6 +38,9 @@ def clean_text_documents(samples):
     :return:
     """
 
+    # remove urls
+    samples = [re.sub(r'^https?:\/\/.*[\r\n]*', '', s) for s in samples]
+
     # standardize case
     samples = [sample.lower() for sample in samples]
 

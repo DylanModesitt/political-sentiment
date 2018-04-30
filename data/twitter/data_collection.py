@@ -116,19 +116,19 @@ def main():
             json.dump(all_tweets, f)
 
     print('>>> gathering tweets for all congressmen')
-    # for screen_name in api.twitter_lists.democratic_senators():
-    #     all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
-    #         'affiliation': 'democrat',
-    #         'assembly': 'senate'
-    #     }))
-    # save()
-    #
-    # for screen_name in api.twitter_lists.gop_senators():
-    #     all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
-    #         'affiliation': 'gop',
-    #         'assembly': 'senate'
-    #     }))
-    # save()
+    for screen_name in api.twitter_lists.democratic_senators():
+        all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
+            'affiliation': 'democrat',
+            'assembly': 'senate'
+        }))
+    save()
+
+    for screen_name in api.twitter_lists.gop_senators():
+        all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
+            'affiliation': 'gop',
+            'assembly': 'senate'
+        }))
+    save()
 
     for screen_name in api.twitter_lists.gop_house():
         all_tweets.append(api.get_user_tweets(screen_name, additional_meta={

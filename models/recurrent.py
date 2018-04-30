@@ -22,6 +22,7 @@ from keras.optimizers import Adam
 # self
 from models.model import PoliticalSentimentModel
 from data.ibc.data import get_ibc_data
+from data.twitter.data import get_congressional_twitter_data
 from preprocessing.preprocess import Data, process_data
 from general.embeddings import get_pretrained_embedding_matrix, GloVeSize
 
@@ -166,7 +167,7 @@ class RecurrentSentimentModel(PoliticalSentimentModel):
         return history 
 
 
-if __name__ == '__main__':
+def fit_ibc():
 
     X, Y = get_ibc_data(
         use_neutral=False,
@@ -190,3 +191,31 @@ if __name__ == '__main__':
     model(data, epochs=10)
     model.visualize(metrics_to_mix=[('acc', 'val_acc'),
                                     ('loss', 'val_loss')])
+
+def fit_twitter():
+
+    X, Y = get_congressional_twitter_data()
+
+    data = process_data(
+        X,
+        Y,
+        validation_split=0.1,
+        max_len=RecurrentSentimentModel.input_length
+    )
+
+    embedding_size = GloVeSize.small
+    embedding_matrix = get_pretrained_embedding_matrix(data.word_to_index,
+                                                       size=embedding_size)
+
+    model = RecurrentSentimentModel(embedding_size=embedding_size.value,
+                                    embedding_matrix=embedding_matrix)
+
+    model(data, epochs=10)
+    model.visualize(metrics_to_mix=[('acc', 'val_acc'),
+                                    ('loss', 'val_loss')])
+
+
+if __name__ == '__main__':
+    fit_twitter()
+
+
