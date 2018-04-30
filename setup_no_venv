@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# download GloVe
+
+if [ ! -d "./bin/GloVe" ]; then 
+	echo "downloading GloVe embeddings";
+	echo "this might take a while...";
+
+	curl -L http://www-nlp.stanford.edu/data/glove.6B.zip -o ./bin/glove.6B.zip;
+	unzip ./bin/glove.6B.zip -d ./bin/GloVe;
+	rm ./bin/glove.6B.zip;
+fi 
+
+# setup environment
+
+export PYTHONPATH=$(pwd);
+
+export FLASK_APP="./web/api.py";
+export FLASK_DEBUG=1
