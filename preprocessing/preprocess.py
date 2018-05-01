@@ -13,7 +13,6 @@ from general.tokenizer import Tokenizer
 import data.ibc.treeUtil as treeUtil
 sys.modules['treeUtil'] = treeUtil
 from data.twitter.data import get_congressional_twitter_data
-from data.ibc.data import get_ibc_data
 
 
 @dataclass
@@ -104,7 +103,9 @@ def clean_text_documents(samples,
     clean a list of text documents resonably well
 
     :param samples: a list of text documents
-    :param twitter: whether or not this is twitter data
+    :param twitter: whether or not this is twitter data.
+                    if this is false, then twitter specific
+                    cleaning parameters will be ignored.
     :param remove_handles: whether to remove handles
     :param remove_hyperlinks: whether to remove hyperlinks
     :param hashtag_mode: the hashtag mode to use

@@ -200,6 +200,7 @@ def fit_twitter():
     data = process_data(
         X,
         Y,
+        twitter=True,
         validation_split=0.1,
         max_len=RecurrentSentimentModel.input_length
     )
