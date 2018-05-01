@@ -192,6 +192,7 @@ def fit_ibc():
     model.visualize(metrics_to_mix=[('acc', 'val_acc'),
                                     ('loss', 'val_loss')])
 
+
 def fit_twitter():
 
     X, Y = get_congressional_twitter_data()
