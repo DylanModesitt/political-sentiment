@@ -12,6 +12,7 @@ from keras.preprocessing.sequence import pad_sequences
 from general.tokenizer import Tokenizer
 import data.ibc.treeUtil as treeUtil
 sys.modules['treeUtil'] = treeUtil
+from data.twitter.data import get_congressional_twitter_data
 from data.ibc.data import get_ibc_data
 
 
@@ -29,14 +30,72 @@ class Data:
     w_train: Sequence = None
     w_test: Sequence = None
 
+def addSpaces(match):
+    pattern = "(^[a-z]+)|([A-Z][a-z]*)|([0-9]+)"
+    phrase = match.group(1)
 
-def clean_text_documents(samples):
+    if "-" in phrase:
+        result = " ".join(phrase.split("-"))
+        return result
+
+    matches = re.finditer(pattern, phrase)
+    result = " ".join([m.group(0) for m in matches])
+    return result
+
+def clean_tweet(sample,
+                remove_handles=True, remove_hyperlinks=True, hashtag_mode=3):
+
+    # Replace '&amp;' with ' and '
+    amp_pattern = re.compile("&amp;")
+    sample = amp_pattern.sub(" and ", sample)
+
+    # Replace special numbers
+    num_pattern = re.compile("\d+(st|nd|rd|th)")
+    sample = num_pattern.sub(" num ", sample)
+
+    # Remove handles
+    if remove_handles:
+        handle_pattern = re.compile("@(\S*)")
+        sample = handle_pattern.sub(" ", sample)
+
+    # Replace hashtags
+    hashtag_pattern = re.compile('#(\S*)')
+    if hashtag_mode == 0: # Leave untouched
+        pass
+
+    elif hashtag_mode == 1: # Remove hashtag
+        sample = hashtag_pattern.sub(" ", sample)
+
+    elif hashtag_mode == 2: # Replace w/ hashtag token
+        sample = hashtag_pattern.sub(" hashtag ", sample)
+
+    elif hashtag_mode == 3: # Replace w/ contents of hashtag
+        sample = hashtag_pattern.sub(addSpaces, sample)
+
+    # Remove hyperlinks
+    hyperlink_pattern = re.compile("https://\S*")
+    if remove_hyperlinks:
+        sample = hyperlink_pattern.sub(" ", sample)
+
+    # Remove extra spaces
+    sample = " ".join(sample.split())
+
+    return sample
+
+def clean_text_documents(samples, twitter=False, remove_handles=True,
+                         remove_hyperlinks=True, hashtag_mode=3):
     """
     clean a list of text documents resonably well
 
     :param samples: a list of text documents
     :return:
     """
+
+    # Twitter-specific text cleaning
+    if twitter:
+        samples = [clean_tweet(sample, remove_handles,
+                               remove_hyperlinks, hashtag_mode) \
+                   for sample in samples]
 
     # remove urls
     samples = [re.sub(r'^https?:\/\/.*[\r\n]*', '', s) for s in samples]
@@ -65,6 +124,10 @@ def clean_text_documents(samples):
 
 def process_data(samples,
              labels,
+             twitter=False,
+             remove_handles=True,
+             remove_hyperlinks=True,
+             hashtag_mode=3,
              vocab_size=10000,
              max_len=50,
              oov_token='oov',
@@ -98,7 +161,10 @@ def process_data(samples,
 
     vprint('>> processing text')
     vprint('cleaning text')
-    samples = clean_text_documents(samples)
+    samples = clean_text_documents(samples, twitter=twitter,
+                                   remove_handles=remove_handles,
+                                   remove_hyperlinks=remove_hyperlinks,
+                                   hashtag_mode=hashtag_mode)
 
     ##########################
     # Tokenization
@@ -146,13 +212,6 @@ def process_data(samples,
 
 
 if __name__ == '__main__':
-    X, Y = get_ibc_data()
-    process_data(X, Y)
-
-
-
-
-
-
-
+    X, Y = get_congressional_twitter_data()
+    process_data(X, Y, twitter=True)
 
