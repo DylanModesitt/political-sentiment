@@ -30,7 +30,8 @@ class Data:
     w_train: Sequence = None
     w_test: Sequence = None
 
-def addSpaces(match):
+
+def _add_space(match):
     pattern = "(^[a-z]+)|([A-Z][a-z]*)|([0-9]+)"
     phrase = match.group(1)
 
@@ -42,8 +43,19 @@ def addSpaces(match):
     result = " ".join([m.group(0) for m in matches])
     return result
 
+
 def clean_tweet(sample,
-                remove_handles=True, remove_hyperlinks=True, hashtag_mode=3):
+                remove_handles=True,
+                remove_hyperlinks=True,
+                hashtag_mode=3):
+    """
+    clean an individual tweet
+    :param sample: the tweet
+    :param remove_handles: whether or not to remove handles
+    :param remove_hyperlinks: whether or not to remove links
+    :param hashtag_mode: the mode for hash tags
+    :return:
+    """
 
     # Replace '&amp;' with ' and '
     amp_pattern = re.compile("&amp;")
@@ -63,14 +75,14 @@ def clean_tweet(sample,
     if hashtag_mode == 0: # Leave untouched
         pass
 
-    elif hashtag_mode == 1: # Remove hashtag
+    elif hashtag_mode == 1:  # Remove hashtag
         sample = hashtag_pattern.sub(" ", sample)
 
-    elif hashtag_mode == 2: # Replace w/ hashtag token
+    elif hashtag_mode == 2:  # Replace w/ hashtag token
         sample = hashtag_pattern.sub(" hashtag ", sample)
 
-    elif hashtag_mode == 3: # Replace w/ contents of hashtag
-        sample = hashtag_pattern.sub(addSpaces, sample)
+    elif hashtag_mode == 3:  # Replace w/ contents of hashtag
+        sample = hashtag_pattern.sub(_add_space, sample)
 
     # Remove hyperlinks
     hyperlink_pattern = re.compile("https://\S*")
@@ -82,12 +94,20 @@ def clean_tweet(sample,
 
     return sample
 
-def clean_text_documents(samples, twitter=False, remove_handles=True,
-                         remove_hyperlinks=True, hashtag_mode=3):
+
+def clean_text_documents(samples,
+                         twitter=False,
+                         remove_handles=True,
+                         remove_hyperlinks=True,
+                         hashtag_mode=3):
     """
     clean a list of text documents resonably well
 
     :param samples: a list of text documents
+    :param twitter: whether or not this is twitter data
+    :param remove_handles: whether to remove handles
+    :param remove_hyperlinks: whether to remove hyperlinks
+    :param hashtag_mode: the hashtag mode to use
     :return:
     """
 
@@ -136,7 +156,7 @@ def process_data(samples,
              one_hot_labels=False,
              verbose=1):
     """
-    get properly formatted data and
+      get properly formatted data and
     data tools for a given set of
     samples and labels.
 
@@ -144,9 +164,18 @@ def process_data(samples,
                     sentence fragements)
     :param labels: a list of the labels of those
                    sentences (or fragements)
-    :param verbose: logging level of data creation
-
-    :return: an intantiation of the above dataclass
+    :param verbose: logging level of data creatio
+    :param twitter: if this is twitter data
+    :param remove_handles: whether or not to remove handles
+    :param remove_hyperlinks: whether or not to remove hyperlinks
+    :param hashtag_mode: the mode to deal with hashtags
+    :param vocab_size: the size of the vocab
+    :param max_len: the max length
+    :param oov_token: the oov token to use
+    :param shuffle: whether or not to shuffle the data
+    :param validation_split: the % to use for validation
+    :param one_hot_labels:
+    :return:
     """
     assert len(samples) == len(labels)
 
