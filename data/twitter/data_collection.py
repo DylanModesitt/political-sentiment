@@ -7,6 +7,7 @@ import pickle
 from multiprocessing import Process
 from time import sleep
 
+
 class StreamListener(tweepy.StreamListener):
 
     def __init__(self, client):
@@ -47,7 +48,7 @@ class StreamListener(tweepy.StreamListener):
 
     def on_error(self, status_code):
         if status_code == 420:
-            #returning False in on_data disconnects the stream
+            # returning False in on_data disconnects the stream
             return False
 
 
@@ -93,7 +94,6 @@ class TwitterClient:
         self.twitter_lists = TwitterClient.TwitterLists(self)
         self.listener = StreamListener(self)
         self.stream = tweepy.Stream(auth=self.auth, listener=self.listener, tweet_mode='extended')
-
 
     def get_user_tweets(self,
                         screen_name,
@@ -151,7 +151,7 @@ class TwitterClient:
         :return: True if the function ended successfully. False if it was terminated.
         """
 
-        p = Process(target=self.stream.filter,kwargs={'track':keywords})
+        p = Process(target=self.stream.filter, kwargs={'track': keywords})
         p.start()
         p.join(timeout)
         if p.is_alive():
