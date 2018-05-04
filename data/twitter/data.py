@@ -2,7 +2,7 @@
 import json
 
 
-def get_congressional_twitter_data(use_house=True,
+def get_congressional_twitter_data(use_house=False,
                                    use_senate=True,
                                    labels=(0, 1),
                                    verbose=1):

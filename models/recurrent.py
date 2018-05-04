@@ -1,6 +1,7 @@
 # system 
 from typing import Sequence, Tuple
 from dataclasses import dataclass
+import os
 
 # lib
 import numpy as np
@@ -18,6 +19,7 @@ from keras.layers import (
 )
 from keras.regularizers import l1_l2
 from keras.optimizers import Adam
+from keras.callbacks import LambdaCallback, ModelCheckpoint
 
 # self
 from models.model import PoliticalSentimentModel
@@ -149,13 +151,18 @@ class RecurrentSentimentModel(PoliticalSentimentModel):
         self.word_to_index = data.word_to_index
         self.save()
 
+        global_save = LambdaCallback(on_epoch_end=self.save)
+        best_save = ModelCheckpoint(filepath=os.path.join(self.dir, 'weights/agent_0_best.h5'),
+                                    save_weights_only=True, save_best_only=True)
+
         history = self.model.fit(
             data.x_train,
             data.y_train,
             validation_data=(data.x_test, data.y_test),
             epochs=epochs,
             batch_size=batch_size,
-            verbose=1
+            verbose=1,
+            callbacks=[global_save, best_save]
         ).history
 
         self.save()
@@ -200,6 +207,7 @@ def fit_twitter():
     data = process_data(
         X,
         Y,
+        twitter=True,
         validation_split=0.1,
         max_len=RecurrentSentimentModel.input_length
     )

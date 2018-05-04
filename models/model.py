@@ -116,6 +116,7 @@ class PoliticalSentimentModel(ABC):
         load the state of thhe model from a saved state.
         :return: None
         """
+        print('loading')
         for i, agent in enumerate(self.agents):
             agent.load_weights(self._get_save_path(i))
 

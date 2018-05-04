@@ -177,36 +177,42 @@ def main():
     all_tweets = []
 
     def save():
-        with open('./data/twitter/data.json', 'w') as f:
+        with open('./data/twitter/cnn.json', 'w') as f:
             json.dump(all_tweets, f)
 
-    print('>>> gathering tweets for all congressmen')
-    for screen_name in api.twitter_lists.democratic_senators():
-        all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
-            'affiliation': 'democrat',
-            'assembly': 'senate'
-        }))
-    save()
+    # print('>>> gathering tweets for all congressmen')
+    # for screen_name in api.twitter_lists.democratic_senators():
+    #     all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
+    #         'affiliation': 'democrat',
+    #         'assembly': 'senate'
+    #     }))
+    # save()
+    #
+    # for screen_name in api.twitter_lists.gop_senators():
+    #     all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
+    #         'affiliation': 'gop',
+    #         'assembly': 'senate'
+    #     }))
+    # save()
+    #
+    # for screen_name in api.twitter_lists.gop_house():
+    #     all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
+    #         'affiliation': 'gop',
+    #         'assembly': 'house'
+    #     }))
+    # save()
+    #
+    # for screen_name in api.twitter_lists.democratic_house():
+    #     all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
+    #         'affiliation': 'democrat',
+    #         'assembly': 'house'
+    #     }))
+    # save()
 
-    for screen_name in api.twitter_lists.gop_senators():
-        all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
-            'affiliation': 'gop',
-            'assembly': 'senate'
-        }))
-    save()
-
-    for screen_name in api.twitter_lists.gop_house():
-        all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
-            'affiliation': 'gop',
-            'assembly': 'house'
-        }))
-    save()
-
-    for screen_name in api.twitter_lists.democratic_house():
-        all_tweets.append(api.get_user_tweets(screen_name, additional_meta={
-            'affiliation': 'democrat',
-            'assembly': 'house'
-        }))
+    all_tweets.append(api.get_user_tweets('CNN', additional_meta={
+        'affiliation': '-',
+        'company': 'CNN'
+    }))
     save()
 
 
