@@ -10,14 +10,29 @@ from time import sleep
 
 class StreamListener(tweepy.StreamListener):
 
-    def __init__(self, client):
+    def __init__(self, client, applier=None):
+        """
+        :param client:
+        :param write_to_log:
+        """
         self.client = client
+        self.applier = applier if applier is not None else StreamListener.default_applier
         tweepy.StreamListener.__init__(self, client.api)
 
     def on_status(self, status):
         """
         Handles statuses matching filter
         """
+        self.applier(status)
+
+    def on_error(self, status_code):
+        if status_code == 420:
+            print('error')
+            # returning False in on_data disconnects the stream
+            return False
+
+    @staticmethod
+    def default_applier(status):
         # Additional filter for tweets lacking geographic info
         if not status.place:
             return
@@ -45,11 +60,6 @@ class StreamListener(tweepy.StreamListener):
         # Save tweet
         with open('./data/twitter/stream/' + str(tweet.id) + '.json', 'w') as f:
             json.dump(data, f)
-
-    def on_error(self, status_code):
-        if status_code == 420:
-            # returning False in on_data disconnects the stream
-            return False
 
 
 class TwitterClient:
@@ -81,7 +91,8 @@ class TwitterClient:
     __COUNT_PER_REQUEST = 200
     __TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
 
-    def __init__(self):
+    def __init__(self,
+                 stream_func=None):
         self.TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
 
         with open("./data/twitter/credentials.txt") as f:
@@ -92,7 +103,7 @@ class TwitterClient:
         self.auth.set_access_token(access_token, access_token_secret)
         self.api = tweepy.API(self.auth)
         self.twitter_lists = TwitterClient.TwitterLists(self)
-        self.listener = StreamListener(self)
+        self.listener = StreamListener(self, stream_func)
         self.stream = tweepy.Stream(auth=self.auth, listener=self.listener, tweet_mode='extended')
 
     def get_user_tweets(self,
@@ -161,7 +172,7 @@ class TwitterClient:
         return True
 
 
-def stream(keywords, iters = 20, timeout = 10):
+def stream(keywords, iters=20, timeout=10):
 
     client = TwitterClient()
 
@@ -219,4 +230,4 @@ def main():
 if __name__ == "__main__":
     keywords = ['trump']
     stream(keywords, iters=20, timeout=10)
-    #main()
+    # main()

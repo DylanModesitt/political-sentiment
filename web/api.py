@@ -68,7 +68,8 @@ def predict():
     text = flask.request.values.get('text')
     samples = clean_text_documents([text])
 
-    formatted = [[model.word_to_index[w] for w in sample.split()] for sample in samples]
+    formatted = [[model.word_to_index[w] if w in model.word_to_index else
+                  model.word_to_index['oov'] for w in sample.split()] for sample in samples]
     formatted = np.array(formatted)
     formatted = pad_sequences(formatted, maxlen=model.input_length)
 

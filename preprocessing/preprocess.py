@@ -3,6 +3,7 @@ import sys
 import re
 from dataclasses import dataclass
 from typing import Sequence, Mapping
+from enum import Enum
 
 # lib
 import numpy as np
@@ -12,7 +13,6 @@ from keras.preprocessing.sequence import pad_sequences
 from general.tokenizer import Tokenizer
 import data.ibc.treeUtil as treeUtil
 sys.modules['treeUtil'] = treeUtil
-from data.twitter.data import get_congressional_twitter_data
 
 
 @dataclass
@@ -30,8 +30,45 @@ class Data:
     w_test: Sequence = None
 
 
+class DefaultTokens:
+    """
+    default replacement tokens
+    for text cleaning
+    """
+
+    bos = 'bos'
+    eos = 'eos'
+    oov = 'oov'
+    hashtag = '<hashtag>'
+    handle = '<person>'
+
+
+class HashtagCleanMode(Enum):
+    """
+    Cleaning mode for hashtags. None
+    keeps them as is. Remove removes them,
+
+    """
+
+    NONE = 0
+    REMOVE = 1
+    GLOBAL = 2
+    BEST_EFFORT_REPLACE = 3
+
+
+class HandleCleanMode(Enum):
+    """
+    enumeration of modes of replacement
+    for handles. That is @Username
+    """
+
+    NONE = 0
+    REMOVE = 1
+    GLOBAL = 2
+
+
 def _add_space(match):
-    pattern = "(^[a-z]+)|([A-Z][a-z]*)|([0-9]+)"
+    pattern = "(^[a-z]+)|([A-Z]+[a-z]*)|([0-9]+)"
     phrase = match.group(1)
 
     if "-" in phrase:
@@ -44,16 +81,16 @@ def _add_space(match):
 
 
 def clean_tweet(sample,
-                remove_handles=True,
                 remove_hyperlinks=True,
-                hashtag_mode=3):
+                hashtag_mode: HashtagCleanMode = HashtagCleanMode.BEST_EFFORT_REPLACE,
+                handle_mode: HandleCleanMode = HandleCleanMode.GLOBAL):
     """
-    clean an individual tweet
+    clean a tweet
     :param sample: the tweet
-    :param remove_handles: whether or not to remove handles
-    :param remove_hyperlinks: whether or not to remove links
-    :param hashtag_mode: the mode for hash tags
-    :return:
+    :param remove_hyperlinks: remove hyperlinks?
+    :param hashtag_mode: the hastag mode
+    :param handle_mode: the handle mode
+    :return: the cleaned tweet
     """
 
     # Replace '&amp;' with ' and '
@@ -64,27 +101,24 @@ def clean_tweet(sample,
     num_pattern = re.compile("\d+(st|nd|rd|th)")
     sample = num_pattern.sub(" num ", sample)
 
-    # Remove handles
-    if remove_handles:
-        handle_pattern = re.compile("@(\S*)")
+    # handles
+    handle_pattern = re.compile("@(\S*)")
+    if handle_mode == HandleCleanMode.REMOVE:
         sample = handle_pattern.sub(" ", sample)
+    elif handle_mode == HandleCleanMode.GLOBAL:
+        sample = handle_pattern.sub(" %s " % DefaultTokens.handle, sample)
 
     # Replace hashtags
     hashtag_pattern = re.compile('#(\S*)')
-    if hashtag_mode == 0: # Leave untouched
-        pass
-
-    elif hashtag_mode == 1:  # Remove hashtag
+    if hashtag_mode == HashtagCleanMode.REMOVE:
         sample = hashtag_pattern.sub(" ", sample)
-
-    elif hashtag_mode == 2:  # Replace w/ hashtag token
-        sample = hashtag_pattern.sub(" hashtag ", sample)
-
-    elif hashtag_mode == 3:  # Replace w/ contents of hashtag
+    elif hashtag_mode == HashtagCleanMode.GLOBAL:
+        sample = hashtag_pattern.sub(" %s " % DefaultTokens.hashtag, sample)
+    elif hashtag_mode == HashtagCleanMode.BEST_EFFORT_REPLACE:
         sample = hashtag_pattern.sub(_add_space, sample)
 
     # Remove hyperlinks
-    hyperlink_pattern = re.compile("https://\S*")
+    hyperlink_pattern = re.compile("https?://\S*")
     if remove_hyperlinks:
         sample = hyperlink_pattern.sub(" ", sample)
 
@@ -119,7 +153,7 @@ def clean_text_documents(samples,
                    for sample in samples]
 
     # remove urls
-    samples = [re.sub(r'^https?:\/\/.*[\r\n]*', '', s) for s in samples]
+    samples = [re.sub(r'https?:\/\/.*[\r\n]*', '', s) for s in samples]
 
     # standardize case
     samples = [sample.lower() for sample in samples]
@@ -144,18 +178,17 @@ def clean_text_documents(samples,
     return samples
 
 def process_data(samples,
-             labels,
-             twitter=False,
-             remove_handles=True,
-             remove_hyperlinks=True,
-             hashtag_mode=3,
-             vocab_size=10000,
-             max_len=50,
-             oov_token='oov',
-             shuffle=True,
-             validation_split=0.2,
-             one_hot_labels=False,
-             verbose=1):
+                 labels,
+                 twitter=False,
+                 remove_handles=True,
+                 remove_hyperlinks=True,
+                 hashtag_mode=3,
+                 vocab_size=10000,
+                 max_len=50,
+                 oov_token='oov',
+                 shuffle=True,
+                 validation_split=0.2,
+                 verbose=1):
     """
       get properly formatted data and
     data tools for a given set of
@@ -239,9 +272,4 @@ def process_data(samples,
     )
 
     return data
-
-
-if __name__ == '__main__':
-    X, Y = get_congressional_twitter_data()
-    process_data(X, Y, twitter=True)
 
