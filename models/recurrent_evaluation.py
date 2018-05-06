@@ -13,7 +13,7 @@ if __name__ == '__main__':
     model = RecurrentSentimentModel(dir='./bin/main')
     model.load()
 
-    with open('./data/twitter/planned_parenthood.json') as f:
+    with open('./data/twitter/nkdumas.json') as f:
         data = json.load(f)
         tweets = [t['content'] for t in data[0]['tweets']]
 
@@ -23,10 +23,10 @@ if __name__ == '__main__':
 
     formatted = pad_sequences(formatted, maxlen=model.input_length)
 
-    model.model.fit(x=formatted,
-                    y=np.array([0]*len(formatted)),
-                    epochs=1,
-                    batch_size=32)
+    # model.model.fit(x=formatted,
+    #                 y=np.array([0]*len(formatted)),
+    #                 epochs=1,
+    #                 batch_size=32)
 
     p = model.model.predict(formatted).flatten()
 

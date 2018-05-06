@@ -188,7 +188,7 @@ def main():
     all_tweets = []
 
     def save():
-        with open('./data/twitter/cnn.json', 'w') as f:
+        with open('./data/twitter/nkdumas.json', 'w') as f:
             json.dump(all_tweets, f)
 
     # print('>>> gathering tweets for all congressmen')
@@ -220,14 +220,14 @@ def main():
     #     }))
     # save()
 
-    all_tweets.append(api.get_user_tweets('CNN', additional_meta={
+    all_tweets.append(api.get_user_tweets('nkdumas', additional_meta={
         'affiliation': '-',
-        'company': 'CNN'
+        'company': 'MIT'
     }))
     save()
 
 
 if __name__ == "__main__":
-    keywords = ['trump']
-    stream(keywords, iters=20, timeout=10)
-    # main()
+    # keywords = ['trump']
+    # stream(keywords, iters=20, timeout=10)
+    main()

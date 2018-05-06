@@ -1,0 +1,586 @@
+[
+    [
+        "bos really fascinating . also interesting but not surprising that ideological self id was much less predictive in num . eos",
+        0.9643575549125671
+    ],
+    [
+        "bos person self reported participation in protests , marches , or other public demonstrations would be interesting to see . theres some older survey work on that , but very little recently thats representative . eos",
+        0.7291072607040405
+    ],
+    [
+        "bos person you should check with louise mensch first just to be sure though . eos",
+        0.2546919882297516
+    ],
+    [
+        "bos this is very stressful . eos",
+        0.8065220713615417
+    ],
+    [
+        "bos person he has never opposed or taken actions against us membership in tpp . period . eos",
+        0.8150466084480286
+    ],
+    [
+        "bos person i think youre opening some dark fan fiction doors you dont want to be opening . . . eos",
+        0.4418059289455414
+    ],
+    [
+        "bos person person youre in the control group ! but thanks for the sutva violation now . . . eos",
+        0.7125325202941895
+    ],
+    [
+        "bos there is no emotion , there is peace . there is no ignorance , there is knowledge . there is no chaos , there is great energy ! ! eos",
+        0.9990032315254211
+    ],
+    [
+        "bos imo , the most overlooked part of this ben carson scandal is that anyone would have numk to spend on dining on furniture , and then select items as tacky and ugly as these . midcenturymodernalltheway eos",
+        0.8828456997871399
+    ],
+    [
+        "bos this is a totally crazy idea , but what if . . . and im just spit balling here . . . people , especially ones with as many glaring red flags , werent allowed to purchase semi automatic weapons ? eos",
+        0.9933156371116638
+    ],
+    [
+        "bos even compared to his colleagues , marco rubios extreme spinelessness is a medical marvel . eos",
+        0.46871116757392883
+    ],
+    [
+        "bos person those are the illegal non citizen votes from people brought in from benghazi on clinton foundation buses that hillary was emailing about on her wiped server ! ! ! wakeup sheeple connectthedots eos",
+        0.9960708618164062
+    ],
+    [
+        "bos person person congratulations ! ! welcome to the greater boston area ! eos",
+        0.9988021850585938
+    ],
+    [
+        "bos person person woah . also , can we nominate another world leader to also step down at the same time ? some sort of pairing system ? eos",
+        0.9739000201225281
+    ],
+    [
+        "bos this . . . cannot be reality . eos",
+        0.8897792100906372
+    ],
+    [
+        "bos person person person person these are really cool plots ! eos",
+        0.9822231531143188
+    ],
+    [
+        "bos trumps support is definitely entirely about economic outcomes and policies . eos",
+        0.9311809539794922
+    ],
+    [
+        "bos sips tea eos",
+        0.9397180080413818
+    ],
+    [
+        "bos person person hopefully not when reading my work ! eos",
+        0.9783041477203369
+    ],
+    [
+        "bos does anyone know of an education lawyer whos barred in new hampshire ? a friend of mine with a disability is having an issue with their university , and has been trying in vain to find representation . eos",
+        0.2977891266345978
+    ],
+    [
+        "bos the apsr called to say that they were probably going to publish every paper in my diss , but i would have to submit it in word . i said probably is no good and took a pass . thanks anyway ! eos",
+        0.9925790429115295
+    ],
+    [
+        "bos the fact that at least one of those polls puts obamas approval over trumps suggests this is a partisan non response story more than a voters leaving moore story . eos",
+        0.9756906628608704
+    ],
+    [
+        "bos i actually think this is a really bad idea . superdelegates have never been pivotal , and usually wouldnt , but can be an important guard against nominating someone unfit or unqualified since by general election time , its largely too late . eos",
+        0.8255289793014526
+    ],
+    [
+        "bos person person person perhaps this is some elaborate scheme by mnuchin to sabotage the white house from within . hes creating images for all num and num dem campaigns . eos",
+        0.9174582362174988
+    ],
+    [
+        "bos what a courageous hero . eos",
+        0.7468130588531494
+    ],
+    [
+        "bos person im not so sure . the precincts that swung ca against prop num were largely suburban areas with lots of parents in the bay area . emphasizing the false threats of ssm to children and to parenting is effective . eos",
+        0.9421810507774353
+    ],
+    [
+        "bos according to this article , moore is comparing himself to jesus . what a complete sociopath . eos",
+        0.9921482801437378
+    ],
+    [
+        "bos hes deeply unwell and unfit . eos",
+        0.7588540315628052
+    ],
+    [
+        "bos this tweet from lt num minutes ago has already aged well . eos",
+        0.9319302439689636
+    ],
+    [
+        "bos person person person person the mayor won because he had the best record on preventing shark attacks of any mayor ever . period . eos",
+        0.8286079168319702
+    ],
+    [
+        "bos person person oh gotcha . i guess i assumed they formally tested for the null of no effect . given sample size , seems more plausible . but thats fair . eos",
+        0.9672124981880188
+    ],
+    [
+        "bos person i actually dont think the headline was that bad . what about it did you find clickbaity y ? honest question . also , super cool paper eos",
+        0.9770646095275879
+    ],
+    [
+        "bos person although likely voter screens are pretty iffy , esp . in special elections also , num , so idk that this is less reliable than the others . eos",
+        0.8204523324966431
+    ],
+    [
+        "bos fun fact num movie licence to kill was changed from licence revoked bc of fear that americans wouldnt know what revoked meant . eos",
+        0.9911261200904846
+    ],
+    [
+        "bos person im tired of the winning . eos",
+        0.43973416090011597
+    ],
+    [
+        "bos person since its west village , im assuming those are each only around num . eos",
+        0.5641468167304993
+    ],
+    [
+        "bos person there are a select , elite few who know exactly what he meant . eos",
+        0.023797601461410522
+    ],
+    [
+        "bos the thing that i find so infuriating is that these people continue to believe that they are the victims and that others are the swamp . eos",
+        0.9603131413459778
+    ],
+    [
+        "bos but he didnt deny it . . . eos",
+        0.6721173524856567
+    ],
+    [
+        "bos person there is clearly one major policy change that will stop this problem slashing taxes for the top num . eos",
+        0.8111907839775085
+    ],
+    [
+        "bos theyre going to replace it with studies of guys sitting in their bed that weigh num pounds . eos",
+        0.9039539098739624
+    ],
+    [
+        "bos person two liberal college professors agree that piece by conservative should get a bad grade . causal proof collusion bias draintheswamp eos",
+        0.9987196922302246
+    ],
+    [
+        "bos person big if true . eos",
+        0.9230198860168457
+    ],
+    [
+        "bos person person or decided to do it only in counties above a very specific population . be still my heart . . . eos",
+        0.5892763137817383
+    ],
+    [
+        "bos person a lot of winning . eos",
+        0.8084922432899475
+    ],
+    [
+        "bos person oh , just googled it . i missed that story originally . eos",
+        0.702317476272583
+    ],
+    [
+        "bos person lufthansa goes to windhoek via johannesburg . eos",
+        0.9818140864372253
+    ],
+    [
+        "bos person that is incredible . eos",
+        0.9867566823959351
+    ],
+    [
+        "bos person person does that model control for the num million illegal dead fraudulent clinton voters ? ? ? eos",
+        0.9919301867485046
+    ],
+    [
+        "bos according to num anon . sources , ivanka and jared were summering in nantucket , otherwise they would have persuaded trump not to pardon arpaio . eos",
+        0.9677947759628296
+    ],
+    [
+        "bos person person person you seem awfully quick to quash the retoids from another planet investigations . . . eos",
+        0.10235985368490219
+    ],
+    [
+        "bos person its true that dems are unparalleled at snatching defeat from jaws of victory , but those numbers are noteworthy and bad for t . eos",
+        0.9981050491333008
+    ],
+    [
+        "bos fun fact the robe was bc in orig . script , hes with a woman and then gets interrupted by marcus . scene before got cut , but robe didnt . eos",
+        0.9648764729499817
+    ],
+    [
+        "bos awful . but important to consider how many people have been victims of non data driven judicial decisions . eos",
+        0.07987816631793976
+    ],
+    [
+        "bos this is amazing . eos",
+        0.8512287139892578
+    ],
+    [
+        "bos person paging chief justice roberts . eos",
+        0.3876744508743286
+    ],
+    [
+        "bos reminder that pres . trump personally called and thanked this excuse for a human being after his election . eos",
+        0.9928429126739502
+    ],
+    [
+        "bos something something irony . eos",
+        0.13889822363853455
+    ],
+    [
+        "bos this is . . . quite a spin . eos",
+        0.9529685974121094
+    ],
+    [
+        "bos person person my hope is that the more this happens , the lower his approval , which means even more defections , and more institutional resistance . eos",
+        0.6965872645378113
+    ],
+    [
+        "bos person person . . . that this is good . plus , elites have the ability to influence public opinion , even if they dont follow through with policy . eos",
+        0.18350006639957428
+    ],
+    [
+        "bos person person i think that almost everything us legislators do is in the interest of reelection if not , theyd be selected out , but i still think . . . eos",
+        0.27206239104270935
+    ],
+    [
+        "bos a really important thread . eos",
+        0.2737799882888794
+    ],
+    [
+        "bos person well miss you ! theres a chris warshaw commemorative item on the file drawer . some sort of bronze statuette . eos",
+        0.9903348088264465
+    ],
+    [
+        "bos person person person what is that , a chair for ants ? ! ? ! eos",
+        0.9965800642967224
+    ],
+    [
+        "bos person this is the most amazing thing on the internet . eos",
+        0.10305535048246384
+    ],
+    [
+        "bos person eos",
+        0.8165802359580994
+    ],
+    [
+        "bos this was incredibly hard to read . the opioid crisis has so many victims . eos",
+        0.9918062686920166
+    ],
+    [
+        "bos this tweet from person has been withheld in united states . eos",
+        0.9761657118797302
+    ],
+    [
+        "bos this num yo deserves so much better than to be cut off and shamed by adults who have no idea what its like to be gay eos",
+        0.7848869562149048
+    ],
+    [
+        "bos person person ive gotten the christmas eve rejection email . eos",
+        0.9528092741966248
+    ],
+    [
+        "bos person person not as good as the options at trump university , im sure . eos",
+        0.9579044580459595
+    ],
+    [
+        "bos person person thats because youre in the fake state of california . in real america , plans are amazing now , just terrific . a very beautiful thing . eos",
+        0.8747040033340454
+    ],
+    [
+        "bos few exceptions . somewhere between num and num , to be more precise . eos",
+        0.30755552649497986
+    ],
+    [
+        "bos numnum num trump fires mueller num many congressional rs defend trump eos",
+        0.9951300621032715
+    ],
+    [
+        "bos numnum prediction num trolls release fakemisleading revelations about muellercomey num fox and friends limbaugh hannity pick up on it . . . eos",
+        0.8896394371986389
+    ],
+    [
+        "bos how humanizing and not at all fake . eos",
+        0.9523352384567261
+    ],
+    [
+        "bos person you must make the request while touching the orb . eos",
+        0.9885846376419067
+    ],
+    [
+        "bos person this line of questioning was so awkward and bizarre . eos",
+        0.8204280734062195
+    ],
+    [
+        "bos thank goodness person has courage to focus on what really matters the clinton emails . i guess area num is up next ! eos",
+        0.9949363470077515
+    ],
+    [
+        "bos if trump was naive and simply didnt know what he was doing , then why did he ask everyone to leave the room before talking about flynn ? eos",
+        0.9992140531539917
+    ],
+    [
+        "bos person jr . eos",
+        0.27060964703559875
+    ],
+    [
+        "bos the columbia law school directory is down . . . eos",
+        0.985630452632904
+    ],
+    [
+        "bos there should be a pre testimony show where comedians stand outside the capitol building and make jokes about what the members are wearing . eos",
+        0.5436320304870605
+    ],
+    [
+        "bos person thats why i appreciate you telling me , on num separate occasions , that all my work is perfect in every way . eos",
+        0.9440147876739502
+    ],
+    [
+        "bos missed opportunity i should have started my prospectus defense by telling person i need loyalty . i expect loyalty . eos",
+        0.1531541645526886
+    ],
+    [
+        "bos person job killer . eos",
+        0.9772811532020569
+    ],
+    [
+        "bos person num d chess ! eos",
+        0.9841213226318359
+    ],
+    [
+        "bos in his defense , comey hiding against the wall and then extending his hand out far to avoid an awkward hug is me at every social event . eos",
+        0.7909940481185913
+    ],
+    [
+        "bos also , switching govt towards cloud based computing as opposed to a localized system seems like a profoundly stupid security move . eos",
+        0.5106711387634277
+    ],
+    [
+        "bos person person in fact , he might spend num of the time discussing that and nothing else . eos",
+        0.06351465731859207
+    ],
+    [
+        "bos person wait for it .  person do you get it ? eos",
+        0.5367386341094971
+    ],
+    [
+        "bos i think the best defense is the same as intel leak trump totally out of his league , has no clue how govt , or anything really , works . eos",
+        0.9791550040245056
+    ],
+    [
+        "bos person when you check your phone during intermission , youll be able to read president pences inauguration speech ! eos",
+        0.9946519136428833
+    ],
+    [
+        "bos num . . . the damage from an impeachment or num am would be worse for their brand than sticking with him . this is just the beginning . eos",
+        0.9463513493537903
+    ],
+    [
+        "bos num the really scary thing is that , short of cataclysmic disaster real possibility , gop leadership will think possibly correctly that . . . eos",
+        0.7546152472496033
+    ],
+    [
+        "bos truly shameful behavior from adults who should have known better . eos",
+        0.9962839484214783
+    ],
+    [
+        "bos num amendment eos",
+        0.8401538133621216
+    ],
+    [
+        "bos in case the all gop effort crashes . eos",
+        0.981336772441864
+    ],
+    [
+        "bos person person its the one with andrew jackson . eos",
+        0.9458540081977844
+    ],
+    [
+        "bos donald trump is to unforced errors what stephen sondheim is to musicals . eos",
+        0.9871025681495667
+    ],
+    [
+        "bos person person person looks super cool ! california in general does a really good job of data openness , like their policing data . yourfuturestate sojealous eos",
+        0.9644678831100464
+    ],
+    [
+        "bos person i think we should take a cue from trump spokesperson and let this russia investigation go . theres clearly nothing to see here . eos",
+        0.9616838097572327
+    ],
+    [
+        "bos person hahahahahahahahahahahaha catches breath hahahahahaha eos",
+        0.9097993969917297
+    ],
+    [
+        "bos that slide showing trump and chairs of senate judiciary com as key decision makers for eb num is a really bizarre view of legislative process . eos",
+        0.089731365442276
+    ],
+    [
+        "bos well said . eos",
+        0.8679680824279785
+    ],
+    [
+        "bos person person i have profoundly failed at threading tweetsbeing consistent with numbers . its just a puzzle ! decode my message ! eos",
+        0.9889610409736633
+    ],
+    [
+        "bos person person bannon , trumps liescorruption , russia , etc . , i just think this is a much smaller issue , in terms of number and power of those involved . eos",
+        0.14094103872776031
+    ],
+    [
+        "bos person person behaved badly she should sue the journal , but a most academics , even democrats , are more responsible , and compared to . . . eos",
+        0.33616673946380615
+    ],
+    [
+        "bos person person num an open empirical question . but beyond that , i just think the scales are completely different here . yes , a small subset of academics . . . eos",
+        0.8311293125152588
+    ],
+    [
+        "bos person person num i would agree that it diminishes lefts credibility , but not sure it causes the rise of the far right it might i just think its . . . eos",
+        0.8939650058746338
+    ],
+    [
+        "bos person person agree , though my quibble more generally is leftwing extremism currently much less of a threat than rightwing extremism , given govt control . eos",
+        0.9937174320220947
+    ],
+    [
+        "bos comey has said wizard or wizardry like numx in this hearing . along w zombie army , his testimony is like a d and d campaign . eos",
+        0.996245801448822
+    ],
+    [
+        "bos everyone should follow person one of the wittiest twitter users . also cool campaign ads . also related to kander of cabaret fame . eos",
+        0.6042617559432983
+    ],
+    [
+        "bos person final eval bad professor knows nothing about the material . lots of folks saying i know way more than him . totally biased grading . sad ! eos",
+        0.7922136187553406
+    ],
+    [
+        "bos person false flag operation ! thats just an agent of the corporatist media elite in a panda costume . open your eyes people ! ! ! ! eos",
+        0.9993915557861328
+    ],
+    [
+        "bos person thats not a surprise , given all we know about cognitive dissonance and party id . question is if this still holds say num years out . eos",
+        0.3384653627872467
+    ],
+    [
+        "bos i just supported regina bateson on person eos",
+        0.9675253033638
+    ],
+    [
+        "bos person i know that o . c . looks good for ds in num . whats your take on a district like ca num , if it draws a high quality d challenger ? eos",
+        0.9770598411560059
+    ],
+    [
+        "bos because the gop is just one vote in congress away from repealing and replacing obamacare ! eos",
+        0.9945623278617859
+    ],
+    [
+        "bos person im surprised journalists from rt arent coming along . eos",
+        0.8326839208602905
+    ],
+    [
+        "bos person perfect ! when trumps border tariff passes , thats how much an iphone will cost . eos",
+        0.9943090677261353
+    ],
+    [
+        "bos gop reaction to ryans plan is a great illustration of mayhews point re mocs often caring about their actions over policy outcomes . eos",
+        0.3216598629951477
+    ],
+    [
+        "bos . . . no ? eos",
+        0.9811711311340332
+    ],
+    [
+        "bos person person gets off twitter and goes back to working more on his dissertation eos",
+        0.8732638955116272
+    ],
+    [
+        "bos person poll watchers already skew in favor of trump , though . so to some degree , its apples and oranges . eos",
+        0.9662469029426575
+    ],
+    [
+        "bos person im pretty sure nonexistent solutions to nonexistent problems could be my dissertation title . eos",
+        0.9357813596725464
+    ],
+    [
+        "bos person puns that bad should be penalized . eos",
+        0.8624110817909241
+    ],
+    [
+        "bos partisan realignment eos",
+        0.9976035952568054
+    ],
+    [
+        "bos to be fair , its possible that this hour long speech is only num words , and the rest is applause . eos",
+        0.5305102467536926
+    ],
+    [
+        "bos person lincoln was also very tough and very good on the cyber . eos",
+        0.8893997669219971
+    ],
+    [
+        "bos i dont think trump knows what the term free trade means . eos",
+        0.9189434051513672
+    ],
+    [
+        "bos person because num benghazi , num e mails , and num the horrible leakers from the fbi and also the corrupt evil nytimes . eos",
+        0.9948154091835022
+    ],
+    [
+        "bos person seeing which senators rose for that and which didnt is . . . interesting . realignment eos",
+        0.9693590998649597
+    ],
+    [
+        "bos its as if the election , the superbowl , and the oscars were in a competition to see who could have the most dramatic twist ending . . . eos",
+        0.9455848932266235
+    ],
+    [
+        "bos person restriction on free speech inherently . it seems qualitatively different from saying someone cant give a speech in general . eos",
+        0.8157188296318054
+    ],
+    [
+        "bos person i agree . this is why ive always been skeptical that declining to invite particular speakers for a commencement is a . . . eos",
+        0.988705575466156
+    ],
+    [
+        "bos person person in fact be unlearned or affected by environment . eos",
+        0.0031185599509626627
+    ],
+    [
+        "bos person person theres plausibly an evolutionary basis for homophily generally . things like racial discrimination can . . . eos",
+        0.8687403202056885
+    ],
+    [
+        "bos person person evolutionary history didnt interact with other races . studies of babies show no sorting by race . though . . . eos",
+        0.4859521985054016
+    ],
+    [
+        "bos person person make no sense for there to be a specific module for sexual selection by race , because humans in deep . . . eos",
+        0.9881943464279175
+    ],
+    [
+        "bos person person the term youre looking for is sexual selection , not natural selection . both by darwin . also , it would . . . eos",
+        0.9983252882957458
+    ],
+    [
+        "bos would be interested in seeing stress related health outcomes by pid , like gerber and huber num . would not be surprised by a trump effect . eos",
+        0.6711666584014893
+    ],
+    [
+        "bos person really any sort of course . . . eos",
+        0.8966372609138489
+    ],
+    [
+        "bos person person but trumps number includes ind . leaners , while bush sr . and reagan numbers dont direct comparison is tricky . eos",
+        0.9486835598945618
+    ],
+    [
+        "bos my first tweet , but i refuse to use that hashtag too cool for school just kidding im in grad school eos",
+        0.9983410835266113
+    ]
+]

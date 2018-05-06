@@ -228,6 +228,6 @@ def fit_twitter():
 
 
 if __name__ == '__main__':
-    fit_twitter()
+    fit_ibc()
 
 
