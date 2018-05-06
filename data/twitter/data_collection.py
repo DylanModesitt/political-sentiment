@@ -50,7 +50,7 @@ class StreamListener(tweepy.StreamListener):
         coords = json.dumps(tweet.place.bounding_box.coordinates[0])
         data = [{
             'content': text,
-            'created_at': tweet.created_at.strftime(self.client.TIME_FORMAT),
+            'created_at': tweet.created_at.strftime('%Y-%m-%d %H:%M:%S'),
             'favorites': tweet.favorite_count,
             'retweets': tweet.retweet_count,
             'lang': tweet.lang,
