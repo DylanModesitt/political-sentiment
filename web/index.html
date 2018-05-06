@@ -89,8 +89,16 @@ var rootUrl = 'http://localhost:8080';
   chart.container("container");
   chart.draw();
 }*/
-
-
+var input = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.getElementById("analyzeButton").click();
+  }
+});
 
 
 
@@ -137,15 +145,7 @@ function analyzeSentiment() {
     });
 }
 
-input.addEventListener("keyup", function(event) {
-  // Cancel the default action, if needed
-  event.preventDefault();
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Trigger the button element with a click
-    document.getElementById("analyzeButton").click();
-  }
-});
+
 
 
 
