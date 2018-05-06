@@ -151,7 +151,10 @@ class RecurrentSentimentModel(PoliticalSentimentModel):
         self.word_to_index = data.word_to_index
         self.save()
 
-        global_save = LambdaCallback(on_epoch_end=self.save)
+        def save_(a,b):
+            self.save()
+
+        global_save = LambdaCallback(on_epoch_end=save_)
         best_save = ModelCheckpoint(filepath=os.path.join(self.dir, 'weights/agent_0_best.h5'),
                                     save_weights_only=True, save_best_only=True)
 
