@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/the.css"/>
 </head>
 <body>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <!-- Begin page content -->
 <div class="container">
@@ -27,14 +28,17 @@
             <input id="text" type="text" class="form-control" placeholder="the affordiable care act ..."
                    aria-label="Username" aria-describedby="basic-addon1">
             <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button" onclick="analyzeSentiment()">Analyze</button>
+                <button id ='analyzeButton'class="btn btn-secondary" type="button" onclick="analyzeSentiment()">Analyze</button>
             </span>
         </div>
     </div>
 
-    <div id="results">
+    <div id="results" align="center">
 
     </div>
+    <div id="CHART" align='center'></div>
+    <div id="levels" align="center"></div>
+
 
 </div>
 
@@ -56,6 +60,48 @@
 
 var rootUrl = 'http://localhost:8080';
 
+
+/*function makeBarChart() {
+
+    // set the data
+    var data = {
+        header: ["Name", "Death toll"],
+      rows: [
+        ["San-Francisco (1906)", 1500],
+        ["Messina (1908)", 87000],
+        ["Ashgabat (1948)", 175000],
+        ["Chile (1960)", 10000],
+        ["Tian Shan (1976)", 242000],
+        ["Armenia (1988)", 25000],
+    ]};
+
+    // create the chart
+   var chart = anychart.bar();
+
+    // add data
+    chart.data(data);
+
+    // set the chart title
+    chart.title("The deadliest earthquakes in the XXth century");
+
+
+  // draw
+  chart.container("container");
+  chart.draw();
+}*/
+var input = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.getElementById("analyzeButton").click();
+  }
+});
+
+
+
 function analyzeSentiment() {
     $.ajax({
        type: 'post',
@@ -67,16 +113,44 @@ function analyzeSentiment() {
 
            var toShow = '';
 
+           var levels = [];
+
            for(var i=0 ; i < response.class_names.length ; i++) {
+
+                levels.push(parseFloat(response.label[i]).toFixed(2).toString());
                toShow += response.class_names[i].toString() + ": " +
                          parseFloat(response.label[i]).toFixed(2).toString() +
                          ", "
             }
 
            document.getElementById("results").innerHTML = toShow;
+
+           document.getElementById("levels").innerHTML = levels;
+
+           var data = [{
+            x: ['Liberal', 'Conservative'],
+            y: [levels[0], levels[1]],
+            type: 'bar',
+            marker:{
+              color: ['rgb(0, 102, 255)', 'rgba(222,45,38,0.8)']
+            }
+          }];
+
+           Plotly.newPlot('CHART', data);
+
+
+
+           
        }
     });
 }
+
+
+
+
+
+
+
 
 </script>
 </body>
