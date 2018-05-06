@@ -3012,3 +3012,14042 @@ Non-trainable params: 0
 _________________________________________________________________
 loading
 model loaded
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input (InputLayer)           (None, 50)                0         
+_________________________________________________________________
+embedding (Embedding)        (None, 50, 100)           1000100   
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 512)               731136    
+_________________________________________________________________
+dense_1 (Dense)              (None, 1024)              525312    
+_________________________________________________________________
+dense_2 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+prediction (Dense)           (None, 1)                 513       
+=================================================================
+Total params: 2,781,861
+Trainable params: 2,781,861
+Non-trainable params: 0
+_________________________________________________________________
+loading
+model loaded
+ * Serving Flask app "map" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+made it through
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input (InputLayer)           (None, 50)                0         
+_________________________________________________________________
+embedding (Embedding)        (None, 50, 100)           1000100   
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 512)               731136    
+_________________________________________________________________
+dense_1 (Dense)              (None, 1024)              525312    
+_________________________________________________________________
+dense_2 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+prediction (Dense)           (None, 1)                 513       
+=================================================================
+Total params: 2,781,861
+Trainable params: 2,781,861
+Non-trainable params: 0
+_________________________________________________________________
+loading
+model loaded
+ * Serving Flask app "map" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+made it through
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input (InputLayer)           (None, 50)                0         
+_________________________________________________________________
+embedding (Embedding)        (None, 50, 100)           1000100   
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 512)               731136    
+_________________________________________________________________
+dense_1 (Dense)              (None, 1024)              525312    
+_________________________________________________________________
+dense_2 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+prediction (Dense)           (None, 1)                 513       
+=================================================================
+Total params: 2,781,861
+Trainable params: 2,781,861
+Non-trainable params: 0
+_________________________________________________________________
+loading
+model loaded
+ * Serving Flask app "map" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+made it through
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input (InputLayer)           (None, 50)                0         
+_________________________________________________________________
+embedding (Embedding)        (None, 50, 100)           1000100   
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 512)               731136    
+_________________________________________________________________
+dense_1 (Dense)              (None, 1024)              525312    
+_________________________________________________________________
+dense_2 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+prediction (Dense)           (None, 1)                 513       
+=================================================================
+Total params: 2,781,861
+Trainable params: 2,781,861
+Non-trainable params: 0
+_________________________________________________________________
+loading
+model loaded
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+
+a status
+BoundingBox(_api=<tweepy.api.API object at 0x10d094f60>, type='Polygon', coordinates=[[[-73.962582, 40.541722], [-73.962582, 40.800037], [-73.699793, 40.800037], [-73.699793, 40.541722]]])
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input (InputLayer)           (None, 50)                0         
+_________________________________________________________________
+embedding (Embedding)        (None, 50, 100)           1000100   
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 512)               731136    
+_________________________________________________________________
+dense_1 (Dense)              (None, 1024)              525312    
+_________________________________________________________________
+dense_2 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+prediction (Dense)           (None, 1)                 513       
+=================================================================
+Total params: 2,781,861
+Trainable params: 2,781,861
+Non-trainable params: 0
+_________________________________________________________________
+loading
+model loaded
+ * Serving Flask app "map" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+None None
+None None
+None None
+None None
+None None
+None None
+None None
+None None
+None None
+None None
+None None
+None None
+None None
+None None
+None None
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input (InputLayer)           (None, 50)                0         
+_________________________________________________________________
+embedding (Embedding)        (None, 50, 100)           1000100   
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 512)               731136    
+_________________________________________________________________
+dense_1 (Dense)              (None, 1024)              525312    
+_________________________________________________________________
+dense_2 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+prediction (Dense)           (None, 1)                 513       
+=================================================================
+Total params: 2,781,861
+Trainable params: 2,781,861
+Non-trainable params: 0
+_________________________________________________________________
+loading
+model loaded
+ * Serving Flask app "map" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+-118.932832 34.257033
+-179.231086 13.182335
+-92.889433 42.491921
+-96.839502 43.465641
+-122.562215 47.166863
+-123.364007 39.376929
+-80.297563 26.308114
+-117.399853 33.152639
+-122.324818 37.845953
+-117.288262 33.131231
+-179.231086 13.182335
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input (InputLayer)           (None, 50)                0         
+_________________________________________________________________
+embedding (Embedding)        (None, 50, 100)           1000100   
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 512)               731136    
+_________________________________________________________________
+dense_1 (Dense)              (None, 1024)              525312    
+_________________________________________________________________
+dense_2 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+prediction (Dense)           (None, 1)                 513       
+=================================================================
+Total params: 2,781,861
+Trainable params: 2,781,861
+Non-trainable params: 0
+_________________________________________________________________
+loading
+model loaded
+ * Serving Flask app "map" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+-118.042964 33.732214
+-122.328148 47.859946
+-73.994474 40.800683
+74.131638 32.126915
+-118.668404 33.704538
+-87.940033 41.644102
+-114.07623 35.174131
+-118.668404 33.704538
+-91.655009 30.146096
+-86.92488 40.339754
+-81.447294 28.347874
+8.096014 51.250688
+70.694641 22.04699
+-70.583131 -37.577857
+-73.171423 40.781995
+-89.57151 36.497129
+-87.940033 41.644102
+-95.823268 29.522325
+-77.032871 38.8914
+-116.050004 44.35821
+-77.335163 38.83278
+-106.645646 25.837092
+-75.563587 38.788657
+77.373474 12.919037
+-79.890005 40.436156
+-90.310298 34.982924
+-71.084335 42.917127
+-71.382444 42.605989
+-95.14691 29.663671
+-87.634643 24.396308
+-109.060257 36.992427
+-106.645646 25.837092
+-82.620093 27.821353
+-79.76259 40.477383
+-106.645646 25.837092
+-118.668404 33.704538
+-85.677333 38.081329
+-71.454878 43.003874
+-83.353955 32.04683
+-83.200169 39.832013
+-99.205809 19.297011
+-83.200169 39.832013
+-111.84096 33.342513
+-117.3336 33.208613
+-97.662618 27.578509
+-56.430439 -34.937896
+-73.933612 40.785365
+-117.298421 32.098292
+-92.352506 34.735212
+-92.135057 32.429655
+-85.336872 40.95926
+-87.022482 35.994568
+-117.845301 33.69418
+-73.425541 41.174766
+2.224101 48.815521
+-179.231086 13.182335
+73.896973 15.13825
+-106.645646 25.837092
+-1.237815 50.949708
+11.601627 -28.96939
+-111.842244 33.204608
+-1.93759 50.7095
+-75.289746 39.930316
+-96.683671 32.700664
+-87.634643 24.396308
+-75.280284 39.871811
+-83.411346 42.093755
+28.05319 -26.390748
+-97.928935 30.127892
+-106.645646 25.837092
+-79.76259 40.477383
+-117.053546 32.743581
+-6.387438 53.298745
+-73.6611 40.612083
+-123.29656 49.313607
+-84.293712 35.652565
+-83.67529 36.540739
+-77.172219 38.827378
+-74.041878 40.570842
+-73.454179 45.005855
+-75.731653 6.166059
+-114.818269 31.332246
+-85.583959 42.089785
+-123.094008 43.762254
+-97.187543 33.128938
+-5.353407 51.378778
+-111.842244 33.204608
+-95.774704 35.995476
+-123.304549 49.08609
+-84.202225 9.943537
+-6.546814 53.178753
+-45.723444 -23.22441
+-43.795449 -23.08302
+-70.978426 41.591322
+-122.790065 45.421863
+78.028739 27.841366
+-98.295824 26.143437
+14.216819 51.502923
+-88.473228 30.144425
+-86.92488 40.339754
+-73.727776 40.950918
+-96.977527 32.620678
+-78.991697 33.617059
+-84.576827 33.647503
+-111.842244 33.204608
+-118.932832 34.257033
+-117.288262 33.131231
+-112.323914 33.29026
+-75.7964 10.084247
+-111.842244 33.204608
+-122.818314 45.349158

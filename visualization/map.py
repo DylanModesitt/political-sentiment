@@ -115,8 +115,11 @@ def gen_plot(n):
 
 
 def applier(status):
-    if status.coordinates is not None:
-        x, y = status.coordinates['coordinates'][0], status.coordinates['coordinates'][1]
+    if status.place is not None:
+        x, y = status.place.bounding_box.coordinates[0][0][0], \
+               status.place.bounding_box.coordinates[0][0][1]
+
+        print(x,y)
 
         samples = clean_text_documents([status.text])
         tweet.append(status.text)
@@ -135,7 +138,7 @@ def applier(status):
 
 def stream():
     client = TwitterClient(stream_func=applier)
-    client.stream.filter(locations=GEOBOX_WORLD, async=True)
+    client.stream.filter(track=political_words, async=True)
 
 
 if __name__ == '__main__':
