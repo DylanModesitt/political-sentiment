@@ -202,7 +202,7 @@ def fit_ibc():
 
 def fit_twitter():
 
-    X, Y = get_congressional_twitter_data()
+    X, Y = get_congressional_twitter_data(use_senate=True, use_house=True)
 
     data = process_data(
         X,

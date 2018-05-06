@@ -130,9 +130,9 @@ def clean_tweet(sample,
 
 def clean_text_documents(samples,
                          twitter=False,
-                         remove_handles=True,
                          remove_hyperlinks=True,
-                         hashtag_mode=3):
+                         hashtag_mode: HashtagCleanMode = HashtagCleanMode.BEST_EFFORT_REPLACE,
+                         handle_mode: HandleCleanMode = HandleCleanMode.GLOBAL):
     """
     clean a list of text documents resonably well
 
@@ -148,9 +148,7 @@ def clean_text_documents(samples,
 
     # Twitter-specific text cleaning
     if twitter:
-        samples = [clean_tweet(sample, remove_handles,
-                               remove_hyperlinks, hashtag_mode) \
-                   for sample in samples]
+        samples = [clean_tweet(sample, remove_hyperlinks, hashtag_mode, handle_mode) for sample in samples]
 
     # remove urls
     samples = [re.sub(r'https?:\/\/.*[\r\n]*', '', s) for s in samples]
@@ -180,9 +178,9 @@ def clean_text_documents(samples,
 def process_data(samples,
                  labels,
                  twitter=False,
-                 remove_handles=True,
                  remove_hyperlinks=True,
-                 hashtag_mode=3,
+                 hashtag_mode: HashtagCleanMode = HashtagCleanMode.BEST_EFFORT_REPLACE,
+                 handle_mode: HandleCleanMode = HandleCleanMode.GLOBAL,
                  vocab_size=10000,
                  max_len=50,
                  oov_token='oov',
@@ -225,8 +223,8 @@ def process_data(samples,
     vprint('>> processing text')
     vprint('cleaning text')
     samples = clean_text_documents(samples, twitter=twitter,
-                                   remove_handles=remove_handles,
                                    remove_hyperlinks=remove_hyperlinks,
+                                   handle_mode=handle_mode,
                                    hashtag_mode=hashtag_mode)
 
     ##########################
