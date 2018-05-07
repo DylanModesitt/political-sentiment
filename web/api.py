@@ -65,6 +65,7 @@ def predict():
 
     :return:
     """
+
     text = flask.request.values.get('text')
     samples = clean_text_documents([text])
 
@@ -78,10 +79,14 @@ def predict():
 
     label = [1 - result, result]
 
-    return jsonify({
+    response = jsonify({
         'label': [str(r) for r in label],
         'class_names': ['liberal', 'conservative']
     })
+
+    response.headers.add('Access-Control-Allow-Origin', '*')
+
+    return response
 
 
 if __name__ == "__main__":

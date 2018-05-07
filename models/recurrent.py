@@ -151,7 +151,10 @@ class RecurrentSentimentModel(PoliticalSentimentModel):
         self.word_to_index = data.word_to_index
         self.save()
 
-        global_save = LambdaCallback(on_epoch_end=self.save)
+        def save_(a,b):
+            self.save()
+
+        global_save = LambdaCallback(on_epoch_end=save_)
         best_save = ModelCheckpoint(filepath=os.path.join(self.dir, 'weights/agent_0_best.h5'),
                                     save_weights_only=True, save_best_only=True)
 
@@ -202,7 +205,7 @@ def fit_ibc():
 
 def fit_twitter():
 
-    X, Y = get_congressional_twitter_data()
+    X, Y = get_congressional_twitter_data(use_senate=True, use_house=True)
 
     data = process_data(
         X,
@@ -225,6 +228,6 @@ def fit_twitter():
 
 
 if __name__ == '__main__':
-    fit_twitter()
+    fit_ibc()
 
 

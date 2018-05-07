@@ -14,6 +14,7 @@ from sklearn.linear_model import SGDClassifier
 import data.ibc.treeUtil as treeUtil
 sys.modules['treeUtil'] = treeUtil
 from data.ibc.data import get_ibc_data
+from data.twitter.data import get_congressional_twitter_data
 from preprocessing.preprocess import clean_text_documents
 
 
@@ -32,7 +33,7 @@ def ibc_nlp_classification(validation_split=0.1,
     """
 
     print('>> gathering data \n')
-    X, Y = get_ibc_data()
+    X, Y = get_ibc_data(use_subsampling=True)
     X = clean_text_documents(X)
     X = np.array(X)
     Y = np.array(Y)
