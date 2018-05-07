@@ -51,7 +51,7 @@ app.layout = html.Div(children=[
         dcc.Graph(id='live-graph', animate=True),
         dcc.Interval(
             id='graph-update',
-            interval=1*1000
+            interval=1*3000
         ),
     ]),
 ])
@@ -65,7 +65,6 @@ def update_graph_scatter():
     global count
 
     try:
-        print("bruh")
         for date, label in new_raw_data:
             if date not in data:
                 data[date] = label
@@ -78,15 +77,11 @@ def update_graph_scatter():
         new_raw_data = []
 
         data_list = list(data.items())
-        print(data_list[:5])
 
         data_list.sort(reverse=True)
         X, Y = zip(*data_list)
-        X = X[:100]
-        Y = Y[:100]
-
-        print(X)
-        print(Y)
+        X = X[:1000]
+        Y = Y[:1000]
 
         plot = plotly.graph_objs.Scatter(
                 x=X,
