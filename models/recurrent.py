@@ -31,12 +31,11 @@ from general.embeddings import get_pretrained_embedding_matrix, GloVeSize
 
 @dataclass
 class RecurrentSentimentModel(PoliticalSentimentModel):
-
     """
     initialize the model by passing in model
     parameters described by the following declarations. 
     These parameters must be passed in the order provided.
-    b
+    
     If the parameter does not have a default value,
     provide one to the initializer.
     """

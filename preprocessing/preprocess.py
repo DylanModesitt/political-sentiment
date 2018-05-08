@@ -35,13 +35,11 @@ class DefaultTokens:
     default replacement tokens
     for text cleaning
     """
-
-    bos = 'bos'
     eos = 'eos'
     oov = 'oov'
     hashtag = '<hashtag>'
     handle = '<person>'
-
+    
 
 class HashtagCleanMode(Enum):
     """
