@@ -1,6 +1,6 @@
 # Political Sentiment Analysis
 
-This is a library to analyze the political sentiment of text. We use Deep Learning models to evaluate the speaker's political leaning (liberal/democrat or conservative/republican). This is being done as the final project to an MIT course, 17.835, and is still in active development.
+This is a library to analyze the political sentiment of text. We use Deep Learning models to evaluate the speaker's political leaning (liberal/democrat or conservative/republican). This was done as the final project to an MIT course, 17.835 in 2018. Trained models can be found in the bin.
 
 # Setup
 
