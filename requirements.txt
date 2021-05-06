@@ -16,7 +16,7 @@ decorator==4.3.0
 dill==0.2.7.1
 Flask==1.0.1
 Flask-Compress==1.4.0
-Flask-Cors==3.0.4
+Flask-Cors==3.0.9
 gast==0.2.0
 geos==0.2.1
 grpcio==1.10.0
